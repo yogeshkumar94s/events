@@ -5,6 +5,8 @@ import { connectToDatabase } from "../mongodb/database"
 import { CreateUserParams, UpdateUserParams } from "@/types";
 import { handleError } from "../utils"
 import User from "../mongodb/database/models/user.model";
+import Order from "../mongodb/database/models/order.model";
+import Event from "../mongodb/database/models/event.model";
 
 
 export const createUser = async (user: CreateUserParams) => {
